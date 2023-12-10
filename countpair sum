@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	//	System.out.println("Hello World");
+	Scanner s=new Scanner(System.in);
+	System.out.println("count pair sum");
+	System.out.println("enter the limit");
+	int a=s.nextInt();
+	System.out.println("enter the numbers");
+	int num[]=new int[a];
+	for(int i=0;i<a;i++)
+	{
+	    num[i]=s.nextInt();
+	}
+    System.out.println("enter the limit");
+	int b=s.nextInt();
+	System.out.println("enter the numbers");
+	int num1[]=new int[b];
+	int t=10;
+	int res;
+	for(int j=0;j<b;j++)
+	{
+	    num1[j]=s.nextInt();
+	}
+	int i=0;
+	int j;
+	while(i<a)
+	{
+	    for(j=0;j<b;j++)
+	    {
+	        res=num[i]+num1[j];
+	    
+	        if(t==res)
+	    {
+	        System.out.println("pair sum"+num[i]+","+num1[j]);
+	    }
+	    }
+	    
+	        System.out.println("not found");
+	   
+	    i++;
+	}
+	
+	
+	
+	
+	}
+}
