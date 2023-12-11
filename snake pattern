@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		//System.out.println("Hello World");
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter a  row limit");
+		int a=s.nextInt();
+		System.out.println("enter a column limit");
+		int b=s.nextInt();
+		System.out.println("enter the numbers");
+		int num[][]=new int[a][b];
+		for(int i=0;i<a;i++)
+		{
+		    for(int j=0;j<b;j++)
+		    {
+		    num[i][j]=s.nextInt();
+		     }
+		}
+		for(int i=0;i<a;i++)
+		{
+		    for(int j=0;j<b;j++)
+		    {
+		    System.out.print(num[i][j]);
+		     }
+		     System.out.println();
+		}
+		int len=num.length;
+	//	System.out.println(len);
+	System.out.println("snake pattern");
+	
+		for(int i=0;i<len;i++)
+		{
+		    if(i%2==0)
+		    {
+		        for(int j=0;j<len;j++)
+		        {
+		           System.out.print(num[i][j]) ;
+		        }
+		    }
+		    else
+		    for(int j=len-1;j>=0;j--)
+		    {
+		        System.out.print(num[i][j]) ;
+		    }
+		    System.out.println();
+		}
+		
+		}
+		 
+	
+}
