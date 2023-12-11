@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Main
+{	
+	public static void main(String[] args) {
+	    Scanner s=new Scanner(System.in);
+		System.out.println("Equilbrium point");
+		System.out.println("enter the limit");
+		int a=s.nextInt();
+		System.out.println("enter the numbers");
+		int num[]=new int[a];
+		for(int i=0;i<a;i++)
+		{
+		    num[i]=s.nextInt();
+		}
+		System.out.println("output");
+		int l=0;
+		int r=0;
+		for(int i=0;i<num.length;i++)
+		{
+		    r=r+num[i];
+		}
+		for(int j=0;j<num.length;j++)
+		{
+		    r=r-num[j];
+		    if(r==l)
+		    {
+		        System.out.println("Equilbrium point is "+ j);
+		        
+		    }
+		    l=l+num[j];
+		
+	//	System.out.println("no eq");
+		    
+		}
+		   
+		        
+		    
+		
+	}
+}
