@@ -1,0 +1,69 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s=new Scanner(System.in);
+		System.out.println("Equilbrium point");
+		System.out.println("enter the row limit");
+		int a=s.nextInt();
+		System.out.println("enter the column limt");
+		int b=s.nextInt();
+		System.out.println("enter the numbers");
+		int num[][]=new int[a][b];
+		for(int i=0;i<a;i++)
+		{
+		    for(int j=0;j<b;j++)
+		    {
+		    num[i][j]=s.nextInt();
+		    }
+		}
+		for(int i=0;i<a;i++)
+		{
+		    for(int j=0;j<b;j++)
+		    {
+		        System.out.print(num[i][j]);
+		    }System.out.println();
+		}
+		System.out.println("upper triangle and lower triangle");
+		int l=0;
+		int u=0;
+		int dia=0;
+		for(int i=0;i<a;i++)
+		{
+		    for(int j=0;j<b;j++)
+		    {
+		        if(i==j)
+		        {
+		            System.out.println("diagnoal are "+num[i][j]);
+		            dia=dia+num[i][j];
+		        }
+		    }
+		}System.out.println("sum of diagonal" + dia);
+		for(int i=0;i<a;i++)
+		{
+		    for(int j=0;j<b;j++)
+		    {
+		        if( i<j)
+		        {
+		            System.out.print(num[i][j]);
+		            u=u+dia;
+		        }
+		        
+		    }System.out.println();
+		}System.out.println("sum of upper" + u);
+	//	System.out.println("lower");
+		for(int i=0;i<a;i++)
+		{
+		    for(int j=0;j<b;j++)
+		    {
+		        if( i>j)
+		        {
+		            System.out.print(num[i][j]);
+		            l=l+dia;
+		        }
+		        
+		    }System.out.println();
+		}
+		System.out.println("sum of lower" + l);
+	}
+}
