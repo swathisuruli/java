@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class Main
+{	
+	public static void main(String[] args) {
+		System.out.println("Replacing frequent");
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter a row limit");
+		int a=s.nextInt();
+		System.out.println("enter column limit");
+		int b=s.nextInt();
+		System.out.println("enter the numbers");
+		int num[][]=new int[a][b];
+		for(int i=0;i<a;i++)
+		{
+		    for(int j=0;j<b;j++)
+		    {
+		        num[i][j]=s.nextInt();
+		    }
+		}
+		System.out.println("the matrx are:");
+		for(int i=0;i<a;i++)
+		{
+		    for(int j=0;j<b;j++)
+		    {
+		        System.out.print(num[i][j]+" ");
+		    }
+		    System.out.println();
+		}
+		System.out.println("inplace transpose");
+		for(int i=0;i<b;i++)
+		{
+		    for(int j=0;j<a;j++)
+		    {
+		      //  num[i][j]=num[j][i];
+		        
+		        System.out.print(num[j][i]+" ");
+		    }
+		    System.out.println();
+		}
+	}
+}
