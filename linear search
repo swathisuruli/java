@@ -1,0 +1,48 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s=new Scanner(System.in);
+		System.out.println("Linear search ");
+		System.out.println("enter the limit");
+		int a=s.nextInt();
+		System.out.println("enter the number");
+		int num[]=new int[a];
+		for(int i=0;i<a;i++)
+		{
+		    num[i]=s.nextInt();
+		}
+		System.out.println("enter the element to find");
+		int b=s.nextInt();
+		for(int i=0;i<num.length;i++)
+		{
+		    if(num[i]==b)
+		    {
+		        System.out.println("element found at the index of " + i);
+		    }
+		    else
+		    {
+		        System.out.println("not found");
+		    }
+		}
+	}
+}
+
+
+output:
+Linear search 
+enter the limit
+5
+enter the number
+20
+30
+40
+50
+60
+enter the element to find
+30
+not found
+element found at the index of 1
+not found
+not found
+not found
