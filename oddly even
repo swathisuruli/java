@@ -1,0 +1,55 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s=new Scanner(System.in);
+		System.out.println("oddly even");
+		System.out.println("enter  a limit");
+		int a=s.nextInt();
+		System.out.println("enter the numbers");
+		int num[]=new int[a];
+		for(int i=0;i<a;i++)
+		{
+		    num[i]=s.nextInt();
+		}
+		int sum=0;
+		int sum1=0;
+		for(int i=0;i<num.length;i++)
+		{
+		    
+		        if(i%2==0)
+		       {
+		            sum=sum+num[i];
+		        }
+		        else{
+		           sum1=sum1+num[i]; 
+		        }
+		    
+		}
+
+		int result=sum-sum1;
+		System.out.println("sum of even index " + sum);
+		System.out.println("sum of odd index" + sum1);
+		System.out.println("difference"+result);
+		
+	}
+}
+
+
+
+
+output:
+
+oddly even
+enter  a limit
+6
+enter the numbers
+6 
+2
+8 
+1
+2
+9
+sum of even index 16
+sum of odd index 12
+difference 4
