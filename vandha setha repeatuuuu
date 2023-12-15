@@ -1,0 +1,48 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s=new Scanner(System.in);
+	    System.out.println("enter the number");
+	    int a=s.nextInt();
+	    int b=a;
+	    System.out.println("reverse an number");
+	    int rev=0,r;
+	    while(a>0)
+	    {
+	        r=a%10;
+	        rev=rev*10+r;
+	        a=a/10;
+	    }
+	    System.out.println(rev);
+	    int sum;
+	    sum=b+rev;
+	   System.out.println("sum of an number"+" " + sum);
+	   int reverse=0,rem;
+	   int result=sum;
+	    while(sum>0)
+	    {
+	        rem=sum%10;
+	        reverse=reverse*10+rem;
+	        sum=sum/10;
+	    }
+	    if(result==reverse)
+	    {
+	        System.out.println("palindrome");
+	    }
+	    else
+	    {
+	        System.out.println("not an palindrome");
+	    }
+	}
+}
+
+output:
+    
+
+ enter the number
+23
+reverse an number
+32
+sum of an number 55
+palindrome
