@@ -1,0 +1,48 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s=new Scanner(System.in);
+		System.out.println("decimal to binary");
+		System.out.println("enter the decimal number");
+		int a=s.nextInt();
+		System.out.println("decimal to binary");
+		int rem,binary=0,i=1;
+	while(a!=0){
+	   rem=a%2;
+	   a=a/2;
+	   binary=binary+rem*i;
+	   i=i*10;
+	}
+	System.out.println(binary);
+	}
+}
+
+
+
+
+
+another approach
+
+  import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s=new Scanner(System.in);
+		System.out.println("decimal to binary");
+		System.out.println("enter the decimal number");
+		int a=s.nextInt();
+		System.out.println("decimal to binary");
+		String binary=Integer.toBinaryString(a);
+		System.out.println(binary);
+	}
+}
+
+
+
+output:
+decimal to binary
+enter the decimal number
+7
+decimal to binary
+111
