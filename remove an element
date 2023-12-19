@@ -1,0 +1,44 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s=new Scanner(System.in);
+		System.out.println("remove an element");
+		System.out.println("enter the limit for an array");
+		int a=s.nextInt();
+		System.out.println("enter the 1st array");
+		int num[]=new int[a];
+		for(int i=0;i<a;i++)
+		{
+		    num[i]=s.nextInt();
+		}
+		 int val=3;
+		 for(int i=0;i<num.length;i++)
+		 {
+		 if(num[i]==val)
+		 {
+		     continue;
+		     
+		 }
+		 System.out.print(num[i]);
+		 }
+}
+}
+
+
+
+
+output:
+
+remove an element
+enter the limit for an array
+4
+enter the 1st array
+3
+2
+2
+3
+
+
+22
