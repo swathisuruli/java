@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s=new Scanner(System.in);
+	  //  StringBuilder rev=new StringBuilder();
+		System.out.println("reverse an word");
+		System.out.println("enter the word");
+		String w=s.nextLine();
+		String rev = "";
+        String s1[] = w.split(" ");
+        for(int i=0;i<s1.length;i++){
+            rev = s1[i]+" "+rev;
+        }
+        System.out.println("Reversed sentence: " + rev);
+	}
+}
+
+
+output:
+
+reverse an word
+enter the word
+you are the best
+Reversed sentence: best the are you 
