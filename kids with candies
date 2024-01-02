@@ -1,0 +1,51 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s=new Scanner(System.in);
+		System.out.println("kid with candies");
+		System.out.println("enter the children");
+		int n=s.nextInt();
+		Boolean a=true;
+		Boolean b= false;
+		System.out.println("enter the candies");
+		int c[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+		    c[i]=s.nextInt();
+		}
+		System.out.println("enter how many candies do u wish to give???");
+		int e=s.nextInt();
+	
+		for(int i=0;i<c.length;i++)
+		{
+		    c[i]=c[i]+e;
+		    int min=c[0];
+		    if(c[i]<min)
+		    {
+		        min=c[i];
+		        System.out.print(b +" ") ;
+		    }
+		    else
+		    {
+		    System.out.print(a+" ");
+		    }
+		}
+		
+	}
+}
+
+
+output:
+kid with candies
+enter the children
+5
+enter the candies
+2
+3
+5
+1
+3
+enter how many candies do u wish to give???
+3
+true true true false true 
