@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s=new Scanner(System.in);
+		System.out.println("enter the first word");
+		String w1=s.nextLine();
+		System.out.println("enter the second word");
+		String w2=s.nextLine();
+		String result=" ";
+		for(int i=0;i<w1.length();i++)
+	
+		    {
+		        result=result + w1.charAt(i) + w2.charAt(i);
+		        
+		    }
+		System.out.print(result);
+	}
+}
+
+
+output:
+
+enter the first word
+abc
+enter the second word
+pqr
+ apbqcr
+
