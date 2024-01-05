@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	//	System.out.println("Hello World");
+	Scanner s=new Scanner(System.in);
+	System.out.println("enter the word");
+	String w=s.nextLine();
+	String rev=" ";
+	System.out.println("total length of the sentence : "+ w.length());
+	String s1[] = w.split(" ");
+       for(int i=s1.length-1;i>=0;i--)
+       {
+           rev=rev+s1[i]+" ";
+           break;
+       }
+            
+        
+        System.out.println("last word : " + rev.length());
+	}
+}
+
+
+
+
+output:
+
+enter the word
+hello wolrd
+total length of the sentence : 11
+last word : 7
