@@ -1,0 +1,65 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	//	System.out.println("Hello World");
+	Scanner s=new Scanner(System.in);
+	System.out.println("enter the row limit");
+	int n=s.nextInt();
+	System.out.println("enter the column limit ");
+	int n1=s.nextInt();
+	System.out.println("enter the digits");
+	int a[][]=new int[n][n1];
+	for(int i=0;i<n;i++)
+	{
+	    for(int j=0;j<n1;j++)
+	    {
+	    a[i][j]=s.nextInt();
+	    }
+	}
+	for(int i=0;i<n;i++)
+	{
+	    for(int j=0;j<n1;j++)
+	    {
+	        System.out.print(a[i][j] + " ");
+	    }
+	    System.out.println();
+	}
+	System.out.println("Rotate an image");
+	int len=a.length;
+	for(int i=len-1;i>=0;i--)
+	{
+	    for(int j=0;j<len;j++)
+	    {
+	        System.out.print(a[i][j] + " ");
+	    }
+	    System.out.println();
+	}
+	}
+}
+
+
+
+
+output:
+enter the row limit
+3
+enter the column limit 
+3
+enter the digits
+1
+2
+3
+4
+5
+6
+7
+8
+9
+1 2 3 
+4 5 6 
+7 8 9 
+Rotate an image
+7 8 9 
+4 5 6 
+1 2 3 
