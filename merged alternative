@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		//.out.println("Hello World");
+		Scanner s=new Scanner(System.in);
+		System.out.println("Merged array");
+        System.out.println("enter the word 1");
+        String w1=s.nextLine();
+        System.out.println("enter the word 2");
+        String w2=s.nextLine();
+        String res=" ";
+        for(int i=0;i<w1.length()|| i<w2.length();i++)
+        {
+            if(i<w1.length())
+            {
+                res=res+w1.charAt(i);
+            }
+            if(i<w2.length())
+            {
+                res=res+w2.charAt(i);
+            }
+        }System.out.println(res);
+         
+		}
+}
+
+output:
+
+
+Merged array
+enter the word 1
+abc
+enter the word 2
+pqr
+ apbqcr
